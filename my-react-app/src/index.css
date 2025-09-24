@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,7 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 /* a {
   font-weight: 500;
@@ -54,13 +54,142 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */
 
-span {
-  color: red;
+/*************************************************
+    GENERAL RULES CSS
+ *************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.span-main {
-  color: violet;
+:root {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+/* HEADER */
+header {
+  margin: 0 auto;
+  height: 90px;
+
+  width: 100%;
+}
+
+/* navbar */
+nav {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  font-size: 12px;
+  background-color: white;
+}
+.cont-logo {
+  height: 90px;
+  width: 20%;
+}
+
+nav ul {
+  height: 90px;
+  width: 80%;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul a {
+  color: black;
+}
+
+/* MAIN */
+.black-bar {
+  background-color: black;
+}
+
+.black-bar-space {
+  width: 80%;
+  margin: 0 auto;
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.black-bar-space p {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.blue-bar {
+  background-color: #0282f9;
+}
+
+.blue-bar-space {
+  width: 80%;
+  margin: 0 auto;
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.blue-bar-space a {
+  color: white;
+}
+
+.blue-bar-space ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* FOOTER */
+/* upper part */
+.upper-part-footer {
+  height: 370px;
+  background-color: #747bff;
+}
+
+.cols-and-big-logo-container {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.columns {
+  height: 370px;
+  background-color: rgb(175, 245, 221);
+  width: 30%;
+  display: flex;
+}
+
+.col {
+  background-color: red;
+  border: 1px solid white;
+  width: 100%;
+  height: 370px;
+}
+
+.big-logo {
+  height: 370px;
+  background-color: rgb(255, 223, 83);
+  width: 70%;
+}
+
+/* lower part */
+.lower-part-footer {
+  height: 100px;
+  background-color: #1c1c1c;
+}
+
+/* _____________________________________ */
 
 @media (prefers-color-scheme: light) {
   :root {

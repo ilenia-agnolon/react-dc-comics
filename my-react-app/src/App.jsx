@@ -4,6 +4,7 @@
 import MyHeader from "./components/MyHeader";
 import MyMainContent from "./components/MyMainContent";
 import MyFooter from "./components/MyFooter";
+import dcLogo from "./assets/dc-logo.png";
 import "./App.css";
 
 function App() {
