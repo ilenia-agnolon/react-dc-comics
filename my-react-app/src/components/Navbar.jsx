@@ -12,52 +12,22 @@ const Navbar = () => {
     { id: 10, text: "SHOP", url: "#", current: false },
   ];
 
+  /* map per far si che i <li> non siano statici */
+  const linkList = links.map((link) => (
+    <li key={link.id}>
+      <a href={link.url} className={link.current ? "active" : ""}>
+        {link.text}
+      </a>
+    </li>
+  ));
+
   return (
     <nav>
       <figure className="cont-logo">
         <img src="/dc-logo.png" alt="logo" />
       </figure>
 
-      <ul>
-        {/* map per far si che i <li> non siano statici */}
-        {links.map((link) => (
-          <li key={index}>
-            <a href={link.url} className="active">
-              {link.text}
-            </a>
-          </li>
-        ))}
-        <li>
-          <a href="#">CHARACTERS</a>
-        </li>
-        <li>
-          <a href="#">COMICS</a>
-        </li>
-        <li>
-          <a href="#">MOVIES</a>
-        </li>
-        <li>
-          <a href="#">TV</a>
-        </li>
-        <li>
-          <a href="#">GAMES</a>
-        </li>
-        <li>
-          <a href="#">COLLECTIBLES</a>
-        </li>
-        <li>
-          <a href="#">VIDEOS</a>
-        </li>
-        <li>
-          <a href="#">FANS</a>
-        </li>
-        <li>
-          <a href="#">NEWS</a>
-        </li>
-        <li>
-          <a href="#">SHOP</a>
-        </li>
-      </ul>
+      <ul>{linkList}</ul>
     </nav>
   );
 };
