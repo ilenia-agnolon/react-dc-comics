@@ -6,10 +6,17 @@ import shopLocator from "../assets/buy-comics-shop-locator.png";
 import powerVisa from "../assets/buy-dc-power-visa.svg";
 //importo array comics
 import comics from "../data/comics";
+// importo img jumbotron
+import jumbotron from "../assets/jumbotron.jpg";
 
 const MyMainContent = () => {
   return (
     <main>
+      {/* jumbotron */}
+      <div className="jumbo">
+        <img src={jumbotron} alt="jumbotron" />
+      </div>
+
       <div className="comics-section">
         <div className="rows-for-comics">
           <div className="comics-container">
