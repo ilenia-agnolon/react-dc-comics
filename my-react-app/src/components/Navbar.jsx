@@ -19,6 +19,14 @@ const Navbar = () => {
       </figure>
 
       <ul>
+        {/* map per far si che i <li> non siano statici */}
+        {links.map((link) => (
+          <li key={index}>
+            <a href={link.url} className="active">
+              {link.text}
+            </a>
+          </li>
+        ))}
         <li>
           <a href="#">CHARACTERS</a>
         </li>
