@@ -2,7 +2,11 @@ import Navbar from "./Navbar";
 
 //creo ed esporto componente
 const MyHeader = () => {
-  return <header></header>;
+  return (
+    <header>
+      <Navbar />
+    </header>
+  );
 };
 
 export default MyHeader;
