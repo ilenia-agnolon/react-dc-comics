@@ -12,7 +12,7 @@ const Navbar = () => {
     { id: 10, text: "SHOP", url: "#", current: false },
   ];
 
-  /* map per far si che i <li> non siano statici */
+  /* navbar dinamica */
   const linkList = links.map((link) => (
     <li key={link.id}>
       <a href={link.url} className={link.current ? "active" : ""}>
