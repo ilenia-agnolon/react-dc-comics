@@ -113,22 +113,47 @@ nav ul a {
 }
 
 /* MAIN */
-.black-bar {
-  background-color: black;
+.comics-section {
+  background-color: #1c1c1c;
+  padding-top: 50px;
 }
 
-.black-bar-space {
+.rows-for-comics {
   width: 80%;
   margin: 0 auto;
-  height: 130px;
   display: flex;
   align-items: center;
 }
 
-.black-bar-space p {
+.rows-for-comics p {
   color: white;
   font-size: 24px;
   font-weight: 700;
+}
+
+.comics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.comic-card {
+  width: 180px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.comic-card h3 {
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.comic-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 .blue-bar {

@@ -4,13 +4,23 @@ import merchandise from "../assets/buy-comics-merchandise.png";
 import subscription from "../assets/buy-comics-subscriptions.png";
 import shopLocator from "../assets/buy-comics-shop-locator.png";
 import powerVisa from "../assets/buy-dc-power-visa.svg";
+//importo array comics
+import comics from "../data/comics";
 
 const MyMainContent = () => {
   return (
     <main>
-      <div className="black-bar">
-        <div className="black-bar-space">
-          <p>--&gt; Content goes here &lt;--</p>
+      <div className="comics-section">
+        <div className="rows-for-comics">
+          <div className="comics-container">
+            {/* contenuto dinamico qui sotto */}
+            {comics.map((comic) => (
+              <div key={comic.id} className="comic-card">
+                <img src={comic.thumb} alt={comic.series} />
+                <h3>{comic.series}</h3>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
