@@ -71,9 +71,9 @@ button:focus-visible {
 /* HEADER */
 header {
   margin: 0 auto;
-  height: 90px;
-
+  height: 120px;
   width: 100%;
+  display: flex;
 }
 
 /* navbar */
@@ -81,12 +81,17 @@ nav {
   margin: 0 auto;
   width: 80%;
   display: flex;
+  align-items: center;
   font-size: 12px;
   background-color: white;
 }
 .cont-logo {
   height: 90px;
   width: 20%;
+}
+
+.cont-logo img {
+  width: 80px;
 }
 
 nav ul {
@@ -150,11 +155,15 @@ nav ul a {
   width: 100%;
 }
 
+.blue-bar-space img {
+  height: 55px;
+}
+
 /* FOOTER */
 /* upper part */
 .upper-part-footer {
   height: 370px;
-  background-color: #747bff;
+  background-image: url("/footer-bg.jpg");
 }
 
 .cols-and-big-logo-container {
@@ -179,7 +188,6 @@ nav ul a {
 
 .big-logo {
   height: 370px;
-  background-color: rgb(255, 223, 83);
   width: 70%;
 }
 
@@ -187,6 +195,8 @@ nav ul a {
 .lower-part-footer {
   height: 100px;
   background-color: #1c1c1c;
+  position: relative;
+  z-index: 999;
 }
 
 /* _____________________________________ */

@@ -1,3 +1,10 @@
+//immagini per barra blu
+import digitalComics from "../assets/buy-comics-digital-comics.png";
+import merchandise from "../assets/buy-comics-merchandise.png";
+import subscription from "../assets/buy-comics-subscriptions.png";
+import shopLocator from "../assets/buy-comics-shop-locator.png";
+import powerVisa from "../assets/buy-dc-power-visa.svg";
+
 const MyMainContent = () => {
   return (
     <main>
@@ -11,19 +18,34 @@ const MyMainContent = () => {
         <div className="blue-bar-space">
           <ul>
             <li>
-              <a href="#">DIGITAL COMICS</a>
+              <a href="#">
+                <img src={digitalComics} alt="Digital Comics" />
+                <span>DIGITAL COMICS</span>
+              </a>
             </li>
             <li>
-              <a href="#">DC MERCHANDISE</a>
+              <a href="#">
+                <img src={merchandise} alt="DC Merchandise" />
+                DC MERCHANDISE
+              </a>
             </li>
             <li>
-              <a href="#">SUBSCRIPTION</a>
+              <a href="#">
+                <img src={subscription} alt="Subscription" />
+                SUBSCRIPTION
+              </a>
             </li>
             <li>
-              <a href="#">COMIC SHOP LOCATOR</a>
+              <a href="#">
+                <img src={shopLocator} alt="Shop Locator" />
+                COMIC SHOP LOCATOR
+              </a>
             </li>
             <li>
-              <a href="#">DC POWER VISA</a>
+              <a href="#">
+                <img src={powerVisa} alt="DC Power Visa" />
+                DC POWER VISA
+              </a>
             </li>
           </ul>
         </div>

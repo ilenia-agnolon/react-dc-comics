@@ -9,7 +9,10 @@ const MyFooter = () => {
             <div className="col"></div>
           </div>
 
-          <div className="big-logo"></div>
+          <div className="big-logo">
+            {" "}
+            <img src="/dc-logo-bg.png" alt="big logo" />
+          </div>
         </div>
       </div>
 
